@@ -12,7 +12,7 @@ pipeline {
         stage('checkout') {
                 steps {
                 git branch: 'master',
-                credentialsId: git_hub,
+                credentialsId: 'git_hub',
                 url: 'https://github.com/irphan95/application_python.git'
                 }
         }
